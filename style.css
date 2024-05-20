@@ -10,6 +10,25 @@ nav {
 
 }
 
+section {
+    margin: 10% 0px;
+}
+
+section h2 {
+    font-size: 50px;
+    padding: 25px;
+    text-align: center;
+
+}
+
+section p {
+    font-size: 20px;
+    padding: 10px;
+    text-align: center;
+}
+
+
+
 #logo {
     transition: transform 1s;
     animation: ZoomIn 1s 1 ease-in-out;
@@ -80,6 +99,428 @@ nav {
     transform: scale(1.3);
 
 }
+
+
+/* Header Content Start */
+
+#header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 700px;
+    background-color: #F0F0F0;
+    position: relative;
+}
+
+.content-side {
+    padding: 10px 20px;
+    margin: 10px 25px;
+}
+
+.content-side h1 {
+    font-size: 65px;
+}
+
+.content-side h1 span {
+    color: #3E8E41;
+}
+
+.content-side p {
+    font-size: 20px;
+    padding: 15px 0px;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    margin: 25px 12px;
+    border-radius: 20px;
+    font-size: 22px;
+    animation: ZoomIn 1s 1 ease-in-out;
+    transition: all 0.5s ease-in;
+
+}
+
+.button:hover {
+    background-color: #3E8E41;
+    transform: scale(1.2);
+}
+
+.button-primary {
+    background-color: #FF0B06;
+}
+
+.button-secondary {
+    border: 1px solid #FF0B06;
+    background-color: transparent;
+    color: black;
+}
+
+.button-secondary:hover {
+    background-color: transparent;
+    border: 1px solid #3E8E41;
+}
+
+.image-side {
+    padding: 10px 20px;
+    margin: 10px 25px;
+
+}
+
+
+
+
+/* Counter */
+
+.counter {
+    height: 150px;
+    background-color: #FF0B06;
+    border-radius: 15px;
+    width: 40%;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: -10%;
+    animation: LeftToRight 1s 1;
+
+}
+
+.counter-item {
+
+    font-size: 24px;
+    margin: 25px;
+    color: white;
+    font-weight: bold;
+
+}
+
+
+
+.counter-label {
+    margin: 10px 0px;
+}
+
+
+
+/* Why Choose Us - Section Start */
+
+
+
+.why-choose-us {
+    height: 500px;
+    padding: 15px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+}
+
+
+
+.specialties-container {
+    display: grid;
+    grid-template-columns: repeat(4, 350px);
+    grid-template-rows: repeat(1, 250px);
+    grid-gap: 20px;
+    flex-wrap: wrap;
+
+}
+
+.specialities {
+    margin: 10px 20px;
+    grid-column-gap: 50px;
+    background-color: #F7DC6F;
+    text-align: center;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 2px 4px 7px 2px gray;
+    transition: all 0.6s ease;
+    border-top: 5px solid black;
+
+
+
+}
+
+.specialities:hover {
+    /* transform: skew(-10deg); */
+    transform: scale(1.1);
+    background-color: #ffcc00;
+}
+
+.specialities h3 {
+    font-size: 25px;
+}
+
+
+.food-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card img:first-child {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.food-detail {
+    display: grid;
+    grid-template-columns: 200px 80px;
+    justify-content: space-between;
+    row-gap: 1px;
+
+}
+
+.food-detail img {
+
+    justify-self: right;
+    cursor: pointer;
+}
+
+.food-detail .about-food {
+    margin-bottom: 10px;
+    grid-column: 1/3;
+}
+
+.food-detail .price {
+    font-size: 20px;
+    font-weight: bold;
+    color: #FF0B06;
+    margin-bottom: 5px;
+}
+
+.food-detail .reviews {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.food-detail a {
+    display: inline-block;
+    padding: 8px 20px;
+    background-color: #FF0B06;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+    text-align: center;
+    width: 80%;
+    grid-column: 1/3;
+    margin: auto;
+    cursor: pointer;
+
+
+}
+
+.food-detail a:hover {
+    background-color: #d90603;
+
+}
+
+
+/*Reviews*/
+.reviews {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.review-card {
+    background-color: #F7DC6F;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 1px grey;
+    width: 500px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5px 10px;
+    transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+
+
+}
+
+.review-card:hover {
+    transform: scale(1.2);
+    z-index: 1;
+}
+
+.review-card img {
+    max-width: 20%;
+    ;
+
+}
+
+.review-card p {
+    font-size: 20px;
+}
+
+.customer {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+
+.customer img {
+    border-radius: 100%;
+    width: 100px;
+    height: 30px;
+    margin: 3px;
+
+}
+
+.customer h3 {
+    margin: 3px;
+}
+
+/* Form */
+
+.form {
+    background-color: #F0F0F0;
+    margin: auto;
+    width: 700px;
+    height: 700px;
+    border-radius: 15px;
+    box-shadow: 2px 1px 7px 1px gray;
+
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+form input,
+textarea {
+    width: 500px;
+    padding: 15px;
+    background-color: white;
+    border: none;
+    box-shadow: 1px 0px 5px 0px grey;
+    margin: 10px;
+    transition: all 0.7s cubic-bezier(0.39, 0.575, 0.565, 1);
+}
+
+form input:focus {
+    transform: scale(1.1);
+
+}
+
+form textarea:focus {
+    transform: scale(1.1);
+
+}
+
+form textarea {
+    font-family: arial;
+    font-size: 15px;
+
+}
+
+form button {
+    padding: 10px 20px;
+    background-color: #FF0B06;
+    border: 0;
+    margin: 15px;
+    width: 60%;
+    color: white;
+    border-radius: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+
+}
+
+form button:hover {
+    background-color: #d90603;
+}
+
+
+footer {
+    background-color: black;
+    display: grid;
+    grid-template-columns: 500px 500px 500px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    height: 500px;
+    font-size: 18px;
+    column-gap: 30px;
+    font-family: Arial;
+
+}
+
+/* Section 1   */
+.section1 img,
+p {
+    margin: 5px 4px;
+
+}
+
+#logo {
+    width: 200px;
+}
+
+.section1 img {
+    filter: grayscale(100%) invert(100%) brightness(1000%);
+}
+
+/* Section 2  */
+
+
+.section2 table a {
+    text-decoration: none;
+    color: white;
+    text-align: center;
+}
+
+.section2 table td,
+th {
+    text-align: left;
+    padding: 10px 20px;
+
+}
+
+/* Section 3 */
+
+.section3 h3 {
+    font-size: 22px;
+    color: #FF0B06;
+    padding: 10px 0px;
+}
+
+.section3 input {
+    padding: 15px;
+    width: 50%;
+    transition: all 0.7s cubic-bezier(0.39, 0.575, 0.565, 1);
+}
+
+.section3 input:focus {
+    transform: scale(1.1);
+}
+
+
 
 /* animations */
 

@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spice</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        #header {
+            height: 1000px;
+        }
+
+
+
+        .content-side {
+            width: 30%;
+            animation: TopToDown 0.8s ease-in-out;
+        }
+
+        .content-side p {
+            color: #726e6e;
+            padding: 3px;
+        }
+
+        .content-side h2 {
+            padding: 5px 3px;
+            margin-top: 10px;
+        }
+
+        .contact-Sections {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            margin-top: 10%;
+        }
+
+        .socials {
+            padding: 0px 8px;
+        }
+
+        .follow-us a img {
+            width: 15px;
+
+        }
+
+        .feedback {
+
+            grid-column: 1/3;
+        }
+
+
+
+        /* Form */
+        .form {
+            animation: LeftToRight 2s cubic-bezier(0.165, 0.84, 0.44, 1);
+        }
+
+
+        /* Our Location Section */
+
+        .our-location {
+            display: flex;
+            justify-content: center;
+
+
+        }
+
+        .our-location h2 {
+            text-align: left;
+            padding: 3px;
+            margin: 30px;
+            font-size: 35px;
+        }
+
+        .our-location ul li {
+            list-style-type: none;
+            padding: 3px;
+            margin: 10px 30px;
+            font-size: 18px;
+        }
+
+        .map {
+            margin: 20px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div id="logo"><img src="IMG/Spice.png" alt="" width="300px" height="300px"></div>
+
+            <div class="pages">
+                <a href="index.html">Home</a>
+                <a href="menu.html">Menu</a>
+                <a href="about.html">About Us</a>
+                <a href="contact.html">Contact</a>
+            </div>
+
+            <div class="icons">
+                <a href=""><img src="IMG/search-interface-symbol.png" alt=""></a>
+                <a href=""><img src="IMG/shopping-cart2.png" alt=""></a>
+                <a href="">Sign Up</a>
+            </div>
+        </nav>
+
+        <div id="header">
+            <div class="content-side">
+                <h1>Contact Us</h1>
+                <p>We’d love to hear from you! Whether you have questions, feedback, or just want to say hello, feel
+                    free
+                    to get in touch with us. At Spice Restaurant, we value our customers and are always here to help.
+                </p>
+                <h2>Email</h2>
+                <p>info@spicerestaurant.com</p>
+                <h2>Phone</h2>
+                <p>Call us at: (123) 456-7890</p>
+
+
+                <div class="contact-Sections">
+                    <div class="reservation">
+                        <h2>Reservations</h2>
+                        <p> To make a reservation, please call us or use our online reservation system here.</p>
+                    </div>
+                    <div class="follow-us ">
+                        <h2>Follow Us</h2>
+                        <p> Stay updated with our latest news and offers:</p>
+                        <div class="socials">
+                            <a href=""><img src="IMG/instagram red.png" alt=""></a>
+                            <a href=""><img src="IMG/facebook red.png" alt=""></a>
+                            <a href=""><img src="IMG/twitter red.png" alt=""></a>
+                        </div>
+
+                    </div>
+                    <div class="feedback">
+                        <h2>Feedback</h2>
+                        <p>We appreciate your feedback! Please fill out our form to let us know about your
+                            dining experience.</p>
+                    </div>
+                </div>
+            </div>
+            <section>
+                <div class="form">
+                    <h2>Get In Touch</h2>
+                    <form action="">
+                        <input type="text" placeholder="Full Name">
+                        <input type="email" placeholder="Email">
+                        <input type="number" placeholder="Phone">
+                        <textarea name="message" id="message" cols="30" rows="10" placeholder="Message"></textarea>
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
+            </section>
+
+        </div>
+    </header>
+
+    <section>
+        <div class="our-location">
+            <div class="map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d230671.3910992777!2d68.06332279453126!3d25.396759499999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x394c71d5468049b5%3A0xe3cbb9b7d63dc8fe!2sRandom%20fries%20wala!5e0!3m2!1sen!2s!4v1716069717229!5m2!1sen!2s"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+            <div class="location">
+                <h2 style="padding: 0; text-align: left;">Our Location</h2>
+
+                <ul>
+                    <li>Spice Restaurant</li>
+                    <li> 123 Flavor Street,</li>
+                    <li>Culinary City, FL 45678</li>
+                </ul>
+
+            </div>
+            <div class="timing">
+                <h2>Hours of Operation</h2>
+                <ul>
+                    <li>Monday to Thursday: 11:00 AM - 10:00 PM</li>
+                    <li>Friday and Saturday: 11:00 AM - 11:00 PM</li>
+                    <li>Sunday: 12:00 PM - 9:00 PM</li>
+                </ul>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- Footer Start From Here -->
+    <footer>
+        <div class="section1">
+            <img src="IMG/Spice.png" alt="" id="logo">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed amet aspernatur error incidunt debitis eos!
+            </p>
+            <a href=""><img src="IMG/instagram red.png" alt=""></a>
+            <a href=""><img src="IMG/facebook red.png" alt=""></a>
+            <a href=""><img src="IMG/twitter red.png" alt=""></a>
+
+        </div>
+        <div class="section2">
+            <table>
+                <tr>
+                    <th>About</th>
+                    <th>Company</th>
+                    <th>Support</th>
+                </tr>
+                <tr>
+                    <td><a href="">About Us</a></td>
+                    <td><a href="">FAQ</a></td>
+                    <td><a href="">Feedback</a></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><a href="">Blogs</a></td>
+                    <td><a href="">Support Center</a></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Partner With Us</td>
+                    <td>Account</td>
+                </tr>
+
+            </table>
+        </div>
+        <div class="section3">
+
+            <h3>Subscirbe Now</h3>
+            <input type="email" placeholder="Email Address">
+        </div>
+    </footer>
+
+</body>
+
+</html>
